@@ -5,10 +5,8 @@ CREATE TABLE cargo(
     name VARCHAR(50),
     weight INT,
     volume DECIMAL,
-    departure INT,
-    destination INT,
+    departure VARCHAR(100),
+    destination VARCHAR(100),
     sender VARCHAR(100),
-    recipient VARCHAR(100),
-    CONSTRAINT departure_fk FOREIGN KEY (departure) REFERENCES city(cityId),
-    CONSTRAINT destination_fk FOREIGN KEY (destination) REFERENCES city(cityId)
+    recipient VARCHAR(100)
 )
